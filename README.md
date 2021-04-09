@@ -1,2 +1,2 @@
 # my-leecode
-Leecode个人联系记录
+Leecode个人练习记录
