@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class NumberReverse {
     public static void main(String[] args) {
-        System.out.println(reverse(1534236469));
+        System.out.println(reverse2(123));
     }
 
     public static int reverse(int x){
@@ -39,4 +39,17 @@ public class NumberReverse {
         }
         return (int)res;
     }
+
+    public static int reverse2(int x){
+        int res = 0;
+        while (x != 0){
+            if( res >0 && res > (Integer.MAX_VALUE-x%10)/10 || res <0 && res < (Integer.MIN_VALUE-x%10)/10){
+                return 0;
+            }
+            res = res * 10 + x%10;
+            x /= 10;
+        }
+        return res;
+    }
+
 }
