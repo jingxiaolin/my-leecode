@@ -2,6 +2,10 @@ package easy;
 
 import java.util.Arrays;
 
+/**
+ * @author jingxiaolin
+ * 整数反转
+ */
 public class NumberReverse {
     public static void main(String[] args) {
         System.out.println(reverse2(123));
