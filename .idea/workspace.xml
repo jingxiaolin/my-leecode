@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="033c240d-5702-457a-b78a-711634da1c9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="033c240d-5702-457a-b78a-711634da1c9d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/leecodetest/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="150">
+              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -266,7 +263,7 @@
       <workItem from="1624844397588" duration="6211000" />
       <workItem from="1633780014871" duration="5351000" />
       <workItem from="1633955344282" duration="3007000" />
-      <workItem from="1634089954734" duration="2563000" />
+      <workItem from="1634089954734" duration="2916000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1617108938081</created>
@@ -324,11 +321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1633785546501</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat(判断是否回文数):">
+      <created>1634092798136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634092798136</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53595000" />
+    <option name="totallyTimeSpent" value="53948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -343,7 +347,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23801066" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23801066" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.55417407" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -529,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="150">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>
