@@ -2,16 +2,18 @@ package tree;
 
 public class TreeNodeLeecode {
     public static void main(String[] args) {
+        //TreeNode rootNode = new TreeNode(-3);
         TreeNode rootNode = new TreeNode(1);
         rootNode.setLeftNode(new TreeNode(2));
         rootNode.setRightNode(new TreeNode(3));
         rootNode.getLeftNode().setLeftNode(new TreeNode(4));
-        /*rootNode.getRightNode().setRightNode(new TreeNode(5));
-        rootNode.getRightNode().getRightNode().setRightNode(new TreeNode(6));
+        rootNode.getLeftNode().setRightNode(new TreeNode(5));
+        /*rootNode.getRightNode().getRightNode().setRightNode(new TreeNode(6));
         rootNode.getRightNode().getRightNode().getRightNode().setLeftNode(new TreeNode(7));*/
         //System.out.println("完全二叉树节点数 == "+treeNodeCount(rootNode));
         //System.out.println("完全二叉树节点数(new) == "+treeNodeCountNew(rootNode));
-        System.out.println("二叉树的直径 == "+diameterOfBinaryTree(rootNode));
+        //System.out.println("二叉树的直径 == "+diameterOfBinaryTree(rootNode));
+        System.out.println("二叉树最长路径的和 == "+diameterOfBinaryTreeSum(rootNode));
     }
     //1、二叉树的最大深度
     //leecode：er-cha-shu-de-shen-du-lcof
@@ -83,6 +85,7 @@ public class TreeNodeLeecode {
         return deepRes;
     }
     //4、求二叉树的直径
+    //diameter-of-binary-tree
     private static int result = 0;
     private static int diameterOfBinaryTree(TreeNode root){
         if(null == root){
@@ -100,5 +103,46 @@ public class TreeNodeLeecode {
         int rr = root.getRightNode() == null?0:diameterOfBinaryTreeCount(root.getRightNode())+1;
         result = Math.max(lr+rr,result);
         return lr>rr?lr:rr;
+    }
+
+    //5、求二叉树的最大的路径和
+    //binary-tree-maximum-path-sum
+    private static int resultSum = 0;
+    private static int diameterOfBinaryTreeSum(TreeNode root){
+        if(null == root){
+            return 0;
+        }
+        resultSum = root.getVal();
+        //diameterOfBinaryTreeCountSum(root);
+        diameterOfBinaryTreeCountSumSimple(root);
+        return resultSum;
+    }
+
+    private static int diameterOfBinaryTreeCountSum(TreeNode root){
+        if(null == root){
+            return 0;
+        }
+        int lr = root.getLeftNode() == null?0:diameterOfBinaryTreeCountSum(root.getLeftNode())+root.getLeftNode().getVal();
+        int rr = root.getRightNode() == null?0:diameterOfBinaryTreeCountSum(root.getRightNode())+root.getRightNode().getVal();
+        if(lr < 0){
+            lr = 0;
+        }
+        if(rr < 0){
+            rr = 0;
+        }
+        resultSum = Math.max(lr+rr+root.getVal(),resultSum);
+        return lr>rr?lr:rr;
+    }
+    //5、求二叉树的最大的路径和
+    //binary-tree-maximum-path-sum
+    //优雅写法
+    private static int diameterOfBinaryTreeCountSumSimple(TreeNode root){
+        if(null == root){
+            return 0;
+        }
+        int lr=Math.max(0,diameterOfBinaryTreeCountSum(root.getLeftNode()));
+        int rr=Math.max(0,diameterOfBinaryTreeCountSum(root.getRightNode()));
+        resultSum = Math.max(lr+rr+root.getVal(),resultSum);
+        return lr>rr?lr+root.getVal():rr+root.getVal();
     }
 }
