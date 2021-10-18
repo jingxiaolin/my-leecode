@@ -10,7 +10,8 @@ public class TreeNodeLeecode {
         rootNode.getRightNode().getRightNode().setRightNode(new TreeNode(6));
         rootNode.getRightNode().getRightNode().getRightNode().setLeftNode(new TreeNode(7));*/
         //System.out.println("完全二叉树节点数 == "+treeNodeCount(rootNode));
-        System.out.println("完全二叉树节点数(new) == "+treeNodeCountNew(rootNode));
+        //System.out.println("完全二叉树节点数(new) == "+treeNodeCountNew(rootNode));
+        System.out.println("二叉树的直径 == "+diameterOfBinaryTree(rootNode));
     }
     //1、二叉树的最大深度
     //leecode：er-cha-shu-de-shen-du-lcof
@@ -81,6 +82,23 @@ public class TreeNodeLeecode {
         }
         return deepRes;
     }
+    //4、求二叉树的直径
+    private static int result = 0;
+    private static int diameterOfBinaryTree(TreeNode root){
+        if(null == root){
+            return 0;
+        }
+        diameterOfBinaryTreeCount(root);
+        return result;
+    }
 
-    //4、
+    private static int diameterOfBinaryTreeCount(TreeNode root){
+        if(null == root){
+            return 0;
+        }
+        int lr = root.getLeftNode() == null?0:diameterOfBinaryTreeCount(root.getLeftNode())+1;
+        int rr = root.getRightNode() == null?0:diameterOfBinaryTreeCount(root.getRightNode())+1;
+        result = Math.max(lr+rr,result);
+        return lr>rr?lr:rr;
+    }
 }
