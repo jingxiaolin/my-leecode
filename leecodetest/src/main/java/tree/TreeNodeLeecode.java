@@ -1,19 +1,25 @@
 package tree;
 
+import java.util.Objects;
+
 public class TreeNodeLeecode {
     public static void main(String[] args) {
         //TreeNode rootNode = new TreeNode(-3);
         TreeNode rootNode = new TreeNode(1);
         rootNode.setLeftNode(new TreeNode(2));
         rootNode.setRightNode(new TreeNode(3));
-        rootNode.getLeftNode().setLeftNode(new TreeNode(4));
-        rootNode.getLeftNode().setRightNode(new TreeNode(5));
+        /*rootNode.getLeftNode().setLeftNode(new TreeNode(4));
+        rootNode.getLeftNode().setRightNode(new TreeNode(5));*/
+        //rootNode.getLeftNode().getLeftNode().setRightNode(new TreeNode(6));
         /*rootNode.getRightNode().getRightNode().setRightNode(new TreeNode(6));
         rootNode.getRightNode().getRightNode().getRightNode().setLeftNode(new TreeNode(7));*/
         //System.out.println("完全二叉树节点数 == "+treeNodeCount(rootNode));
         //System.out.println("完全二叉树节点数(new) == "+treeNodeCountNew(rootNode));
         //System.out.println("二叉树的直径 == "+diameterOfBinaryTree(rootNode));
-        System.out.println("二叉树最长路径的和 == "+diameterOfBinaryTreeSum(rootNode));
+        //System.out.println("二叉树最长路径的和 == "+diameterOfBinaryTreeSum(rootNode));
+        //System.out.println("是否是完全二叉树 == "+checkTreeBalance(rootNode));
+        System.out.println("二叉树是否镜像 == "+checkTreeSymmetric(rootNode));
+
     }
     //1、二叉树的最大深度
     //leecode：er-cha-shu-de-shen-du-lcof
@@ -105,6 +111,19 @@ public class TreeNodeLeecode {
         return lr>rr?lr:rr;
     }
 
+    private static boolean resultBalance = true;
+    private static int diameterOfBinaryTreeCountForBalance(TreeNode root){
+        if(null == root){
+            return 0;
+        }
+        int lr = root.getLeftNode() == null?0:diameterOfBinaryTreeCount(root.getLeftNode())+1;
+        int rr = root.getRightNode() == null?0:diameterOfBinaryTreeCount(root.getRightNode())+1;
+        if(resultBalance){
+            resultBalance = Math.abs(lr-rr)<=1;
+        }
+        return lr>rr?lr:rr;
+    }
+
     //5、求二叉树的最大的路径和
     //binary-tree-maximum-path-sum
     private static int resultSum = 0;
@@ -145,4 +164,78 @@ public class TreeNodeLeecode {
         resultSum = Math.max(lr+rr+root.getVal(),resultSum);
         return lr>rr?lr+root.getVal():rr+root.getVal();
     }
+
+    //6、判断平衡二叉树，左右子树高度差不超过1
+    //ping-heng-er-cha-shu-lcof
+    private static boolean checkTreeBalance(TreeNode root){
+        if(null == root){
+            return true;
+        }
+        diameterOfBinaryTreeCountForBalance(root);
+        return resultBalance;
+    }
+
+    //7、判断二叉树是否是镜像的
+    //dui-cheng-de-er-cha-shu-lcof
+    //思路
+    /*
+    * 递归的函数要干什么？
+函数的作用是判断传入的两个树是否镜像。
+输入：TreeNode left, TreeNode right
+输出：是：true，不是：false
+递归停止的条件是什么？
+左节点和右节点都为空 -> 倒底了都长得一样 ->true
+左节点为空的时候右节点不为空，或反之 -> 长得不一样-> false
+左右节点值不相等 -> 长得不一样 -> false
+从某层到下一层的关系是什么？
+要想两棵树镜像，那么一棵树左边的左边要和二棵树右边的右边镜像，一棵树左边的右边要和二棵树右边的左边镜像
+调用递归函数传入左左和右右
+调用递归函数传入左右和右左
+只有左左和右右镜像且左右和右左镜像的时候，我们才能说这两棵树是镜像的
+调用递归函数，我们想知道它的左右孩子是否镜像，传入的值是root的左孩子和右孩子。这之前记得判个root==null。
+    *  */
+    //其实也可以，先求左子树的镜像，看和右子树是否相等
+    public static boolean checkTreeSymmetric(TreeNode root){
+        if(null == root){
+            return true;
+        }
+        return checkTreeSymmetricRecurrence(root.getLeftNode(),root.getRightNode());
+    }
+
+    private static boolean checkTreeSymmetricRecurrence(TreeNode leftNode,TreeNode rightNode) {
+        if(null == leftNode && null == rightNode){
+            return true;
+        }
+        if(null == leftNode || null == rightNode){
+            return false;
+        }
+        return Objects.equals(leftNode.getVal(),rightNode.getVal()) &&
+                checkTreeSymmetricRecurrence(leftNode.getLeftNode(),rightNode.getRightNode()) &&
+                checkTreeSymmetricRecurrence(leftNode.getRightNode(),rightNode.getLeftNode())
+                ;
+    }
+
+    //8、求一颗二叉树的镜像树
+    //er-cha-shu-de-jing-xiang-lcof
+    private static TreeNode getTreeNodeImage(TreeNode root){
+        if(root == null){
+            return root;
+        }
+        imageTreeNode(root);
+        return root;
+    }
+
+    private static void imageTreeNode(TreeNode root) {
+        if(root == null){
+            return;
+        }
+        TreeNode tmpNode = root.getLeftNode();
+        root.setLeftNode(root.getRightNode());
+        root.setRightNode(tmpNode);
+        imageTreeNode(root.getLeftNode());
+        imageTreeNode(root.getRightNode());
+    }
+
+    //9、验证二叉搜索树
+    //validate-binary-search-tree
 }

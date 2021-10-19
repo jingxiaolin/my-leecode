@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="033c240d-5702-457a-b78a-711634da1c9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java" beforeDir="false" afterPath="$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/leecodetest/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leecodetest/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="230">
               <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
@@ -29,11 +30,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="23">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding>
                 <element signature="e#323#324#0" expanded="true" />
                 <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
                 <element signature="e#539#540#0" expanded="true" />
               </folding>
             </state>
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+            <state relative-caret-position="384">
+              <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -96,6 +98,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -142,7 +145,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -155,7 +157,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../longvideo/graphql-renzheng-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -266,7 +268,8 @@
       <workItem from="1634175964095" duration="1211000" />
       <workItem from="1634524709259" duration="2005000" />
       <workItem from="1634528407496" duration="4065000" />
-      <workItem from="1634540756762" duration="9433000" />
+      <workItem from="1634540756762" duration="9500000" />
+      <workItem from="1634630190126" duration="10933000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1617108938081</created>
@@ -366,17 +369,23 @@
       <option name="project" value="LOCAL" />
       <updated>1634551615089</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat(二叉树最大路径和，二叉树直径):">
+      <created>1634551683400</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1634551683400</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79889000" />
+    <option name="totallyTimeSpent" value="90889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.112368636" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11398545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -445,25 +454,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>12</line>
+          <line>15</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>111</line>
+          <line>130</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>98</line>
+          <line>104</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>101</line>
+          <line>107</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -574,24 +583,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/leecodetest/leecodetest.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/leecodetest/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="230">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/leecodetest/leecodetest.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="23">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding>
             <element signature="e#323#324#0" expanded="true" />
             <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
           </folding>
         </state>
@@ -599,8 +609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+        <state relative-caret-position="384">
+          <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
         </state>
       </provider>
     </entry>
