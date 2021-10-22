@@ -1,12 +1,14 @@
 package tree;
 
+import sun.reflect.generics.tree.Tree;
+
 import java.util.Objects;
 
 public class TreeNodeLeecode {
     public static void main(String[] args) {
         //TreeNode rootNode = new TreeNode(-3);
-        TreeNode rootNode = new TreeNode(1);
-        rootNode.setLeftNode(new TreeNode(2));
+        TreeNode rootNode = new TreeNode(2);
+        rootNode.setLeftNode(new TreeNode(7));
         rootNode.setRightNode(new TreeNode(3));
         /*rootNode.getLeftNode().setLeftNode(new TreeNode(4));
         rootNode.getLeftNode().setRightNode(new TreeNode(5));*/
@@ -18,8 +20,8 @@ public class TreeNodeLeecode {
         //System.out.println("二叉树的直径 == "+diameterOfBinaryTree(rootNode));
         //System.out.println("二叉树最长路径的和 == "+diameterOfBinaryTreeSum(rootNode));
         //System.out.println("是否是完全二叉树 == "+checkTreeBalance(rootNode));
-        System.out.println("二叉树是否镜像 == "+checkTreeSymmetric(rootNode));
-
+        //System.out.println("二叉树是否镜像 == "+checkTreeSymmetric(rootNode));
+        System.out.println("二叉树是否是二叉搜索树 == "+validTreeNode(rootNode));
     }
     //1、二叉树的最大深度
     //leecode：er-cha-shu-de-shen-du-lcof
@@ -238,4 +240,40 @@ public class TreeNodeLeecode {
 
     //9、验证二叉搜索树
     //validate-binary-search-tree
+    private static boolean validTreeNode(TreeNode root){
+        if(null == root){
+            return true;
+        }
+        return validSearchTree(root,null,null);
+    }
+
+    //一个失败的方案，主要是只考虑了左<跟<右,没有考虑，需要左子树的节点全部小于根节点再小于右子树的全部节点
+    /*private static boolean validSearchTree(TreeNode root) {
+        if(null == root){
+            return true;
+        }
+        boolean tmpRes = true;
+        if(null != root.getLeftNode()){
+            tmpRes = root.getVal()>root.getLeftNode().getVal();
+        }
+        if(null != root.getRightNode()){
+            tmpRes = tmpRes && root.getVal()<root.getRightNode().getVal();
+        }
+        return tmpRes && validSearchTree(root.getLeftNode()) && validSearchTree(root.getRightNode());
+    }*/
+    //思路，每次向下遍历都需要带着一个界限，比如跟根节点，上下界限为空。跟的左，上界为根，下界为空
+    //跟的右节点，上界为空，下界为根
+    private static boolean validSearchTree(TreeNode root,Integer low,Integer up) {
+        if(null == root){
+            return true;
+        }
+        int val = root.getVal();
+        if(null != low && val<low){
+            return false;
+        }
+        if(null != up && val>up){
+            return false;
+        }
+        return validSearchTree(root.getLeftNode(),low,val) && validSearchTree(root.getRightNode(),val,up);
+    }
 }

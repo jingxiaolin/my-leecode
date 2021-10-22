@@ -19,12 +19,12 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/leecodetest/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
               <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -45,8 +45,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+            <state relative-caret-position="378">
+              <caret line="277" column="5" lean-forward="true" selection-start-line="277" selection-start-column="5" selection-end-line="277" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -270,6 +273,8 @@
       <workItem from="1634528407496" duration="4065000" />
       <workItem from="1634540756762" duration="9500000" />
       <workItem from="1634630190126" duration="10933000" />
+      <workItem from="1634649482703" duration="111000" />
+      <workItem from="1634867778802" duration="18869000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1617108938081</created>
@@ -376,16 +381,24 @@
       <option name="project" value="LOCAL" />
       <updated>1634551683400</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat(又做了两道题，哈哈):">
+      <created>1634649577607</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634649577607</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90889000" />
+    <option name="totallyTimeSpent" value="109869000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11398545" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.117219076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -395,7 +408,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6571936" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45470694" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4582593" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -429,7 +442,8 @@
     <MESSAGE value="feat(判断是否回文数):" />
     <MESSAGE value="feat(提交二叉树代码):" />
     <MESSAGE value="feat(二叉树最大路径和，二叉树直径):" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(二叉树最大路径和，二叉树直径):" />
+    <MESSAGE value="feat(又做了两道题，哈哈):" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(又做了两道题，哈哈):" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -454,27 +468,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>15</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>130</line>
+          <line>132</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>104</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
-          <line>107</line>
+          <line>109</line>
           <properties />
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
+          <line>243</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java</url>
+          <line>246</line>
+          <properties />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -587,12 +613,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/leecodetest/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -607,10 +633,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Java/jdk/src.zip!/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+          <folding>
+            <element signature="e#1410#1411#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/leecodetest/src/main/java/tree/TreeNodeLeecode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+        <state relative-caret-position="378">
+          <caret line="277" column="5" lean-forward="true" selection-start-line="277" selection-start-column="5" selection-end-line="277" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
