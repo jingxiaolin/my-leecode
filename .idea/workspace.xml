@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="033c240d-5702-457a-b78a-711634da1c9d" name="Default Changelist" comment="">
+    <list default="true" id="033c240d-5702-457a-b78a-711634da1c9d" name="Default Changelist" comment="feat(又做了两道题，哈哈):">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/EntryOfListLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/FindFirstCommonNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/FindKthNodeToTail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/MergeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/PrintListFromTailToHead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leecodetest/leecodetest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leecodetest/leecodetest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leecodetest/target/classes/tree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/leecodetest/target/classes/tree/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leecodetest/target/classes/tree/TreeNodeLeecode.class" beforeDir="false" afterPath="$PROJECT_DIR$/leecodetest/target/classes/tree/TreeNodeLeecode.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +35,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_312/src.zip!/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -125,21 +138,21 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Git/longvideo/qiyihao-knowledge" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.TreeNodeLeecode">
-    <configuration name="CheckIsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.CheckIsPalindrome" />
+  <component name="RunManager" selected="Application.FindKthNodeToTail">
+    <configuration name="EntryOfListLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jianzhiOffer.EntryOfListLoop" />
       <module name="leecodetest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.*" />
+          <option name="PATTERN" value="jianzhiOffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.NumberReverse" />
+    <configuration name="FindFirstCommonNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jianzhiOffer.FindFirstCommonNode" />
       <module name="leecodetest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.*" />
+          <option name="PATTERN" value="jianzhiOffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,12 +173,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeNodeLeecode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.TreeNodeLeecode" />
+    <configuration name="FindKthNodeToTail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jianzhiOffer.FindKthNodeToTail" />
       <module name="leecodetest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.*" />
+          <option name="PATTERN" value="jianzhiOffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,12 +186,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoNumAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="easy.TwoNumAdd" />
+    <configuration name="MergeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jianzhiOffer.MergeList" />
       <module name="leecodetest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="easy.*" />
+          <option name="PATTERN" value="jianzhiOffer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintListFromTailToHead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jianzhiOffer.PrintListFromTailToHead" />
+      <module name="leecodetest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jianzhiOffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,10 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TreeNodeLeecode" />
-        <item itemvalue="Application.CheckIsPalindrome" />
-        <item itemvalue="Application.NumberReverse" />
-        <item itemvalue="Application.TwoNumAdd" />
+        <item itemvalue="Application.FindKthNodeToTail" />
+        <item itemvalue="Application.PrintListFromTailToHead" />
+        <item itemvalue="Application.EntryOfListLoop" />
+        <item itemvalue="Application.FindFirstCommonNode" />
+        <item itemvalue="Application.MergeList" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634649577607</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat(又做了两道题，哈哈):">
+      <created>1636556528792</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1636556528792</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -388,6 +422,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
@@ -447,8 +493,29 @@
           <line>246</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/MergeList.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/FindFirstCommonNode.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leecodetest/src/main/java/jianzhiOffer/EntryOfListLoop.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="newList1==null ? pHead2 : newList1.next" language="JAVA" />
+        <watch expression="newList1 != newList2" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
